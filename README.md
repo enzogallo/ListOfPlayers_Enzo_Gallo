@@ -5,7 +5,7 @@ Afin de visualiser mon application mobile veuillez suivre les étapes suivantes 
 - Lancer Android Studio
 - File -> New -> Project From Version Control
 - Version Control : Git, URL : https://github.com/enzogallo/ListOfPlayers_Enzo_Gallo.git puis cliquer sur "Clone"
-- Vous trouverez les méthodes que j'ai immplémenté dans app -> java -> com.example.listofplayers
+- Vous trouverez les méthodes que j'ai implémenté dans app -> java -> com.example.listofplayers
   et également les fichiers xml d'activité dans app -> res -> layout 
 - Vous pouvez ensuite lancer l'application en cliquant sur "Run" (après avoir préalablement selectionné un émulateur)
 
