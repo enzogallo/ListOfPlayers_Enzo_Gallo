@@ -2,16 +2,15 @@ package com.example.listofplayers;
 
 public class Player {
 
-    private String defending_score, stamina_score, passing_score,
+    private String speed_score, defending_score, stamina_score, passing_score,
             dribbling_score, shooting_score, score;
-    private String name, lieu, poster;
-    private String speed_score;
+    private String name, lieu, photo;
 
     public Player(String name, String lieu, String imagePlayer, String speed, String defending, String stamina,
                   String passing, String dribbling, String shooting, String score){
         this.name = name;
         this.lieu = lieu;
-        this.poster = imagePlayer;
+        this.photo = imagePlayer;
         this.speed_score = speed;
         this.defending_score = defending;
         this.stamina_score = stamina;
@@ -57,7 +56,7 @@ public class Player {
         return lieu;
     }
 
-    public String getPoster() {
-        return poster;
+    public String getPhoto() {
+        return photo;
     }
 }

@@ -22,7 +22,8 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private RecyclerView rvPlayerItems;
+    private RecyclerView rvPlayerItems; //on utilise le recyclerview pour eviter de charger toute la base de donnée
+    //on prefere charger uniquement ce que l'on voit
     private RequestQueue requestQueue;
     private List<Player> playerList;
 
@@ -48,6 +49,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void fetchPlayers(){
         String url = "https://api.npoint.io/555573a717aaea5cec66";
+        //Ici je me suis permis de prendre uniquement la première page de la base de données que j'ai générée sur un générateur json
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
@@ -57,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         JSONObject jsonObject = response.getJSONObject(i);
                         String name = jsonObject.getString("name");
-                        String score = Double.toString(Math.round(jsonObject.getDouble("score")*10.0)/10.0);
+                        String score = Double.toString(Math.round(jsonObject.getDouble("score")*10.0)/10.0); //permet d'arrondir au dixième les scores
                         String lieu = jsonObject.getString("city");
                         String speed_score = "Speed : " + Double.toString(Math.round(jsonObject.getDouble("speed_score")*10.0)/10.0);
                         String stamina_score = "Stamina : " + Double.toString(Math.round(jsonObject.getDouble("stamina_score")*10.0)/10.0);
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                             imagePlayer = jsonObject.getString("profile_pic");
                         }
                         else{
-                            imagePlayer = "https://thumbs.dreamstime.com/b/footballeur-dans-l-action-50903382.jpg";
+                            imagePlayer = "https://thumbs.dreamstime.com/b/footballeur-dans-l-action-50903382.jpg"; //affichage d'une image libre de droit en cas d'absence de photo de profil des joueurs
                         }
                         Player player = new Player(name, lieu, imagePlayer, speed_score, defending_score, stamina_score, passing_score, dribbling_score, shooting_score, score );
                         playerList.add(player);

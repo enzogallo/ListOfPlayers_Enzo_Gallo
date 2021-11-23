@@ -32,11 +32,11 @@ public class DetailActivity extends AppCompatActivity {
 
 
         Bundle bundle = getIntent().getExtras();
-
+        //recuperation des données du bundle crée dans l'adapter
         String mName = bundle.getString("name");
         String mScore = bundle.getString("score");
         String mLieu = bundle.getString("lieu");
-        String mPoster = bundle.getString("poster");
+        String mPhoto = bundle.getString("photo");
         String mSpeed_score = bundle.getString("speed_score");
         String mStamina_score = bundle.getString("stamina_score");
         String mDribbling_score = bundle.getString("dribbling_score");
@@ -44,7 +44,7 @@ public class DetailActivity extends AppCompatActivity {
         String mPassing_score = bundle.getString("passing_score");
         String mShooting_score = bundle.getString("shooting_score");
 
-        Glide.with(this).load(mPoster).into(imageView);
+        Glide.with(this).load(mPhoto).into(imageView);
 
         name.setText(mName);
         score.setText(mScore);

@@ -47,7 +47,7 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.PlayerHold
         holder.defending_score.setText(player.getDefending().toString());
         holder.passing_score.setText(player.getPassing().toString());
         holder.shooting_score.setText(player.getShooting().toString());
-        Glide.with(context).load(player.getPoster()).into(holder.imageview);
+        Glide.with(context).load(player.getPhoto()).into(holder.imageview);
 
         holder.constraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -59,7 +59,7 @@ public class PlayerAdapter extends RecyclerView.Adapter<PlayerAdapter.PlayerHold
                 bundle.putString("name", player.getName());
                 bundle.putString("score", player.getScore());
                 bundle.putString("lieu", player.getLieu());
-                bundle.putString("poster", player.getPoster());
+                bundle.putString("photo", player.getPhoto());
                 bundle.putString("speed_score", player.getSpeed());
                 bundle.putString("stamina_score", player.getStamina());
                 bundle.putString("dribbling_score", player.getDribbling());
