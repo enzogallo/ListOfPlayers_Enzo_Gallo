@@ -2,9 +2,14 @@ package com.example.listofplayers;
 
 public class Player {
 
-    private String speed_score, defending_score, stamina_score, passing_score,
-            dribbling_score, shooting_score, score;
-    private String name, lieu, photo;
+    private final String speed_score;
+    private final String defending_score;
+    private final String stamina_score;
+    private final String passing_score;
+    private final String dribbling_score;
+    private final String shooting_score;
+    private final String score;
+    private final String name, lieu, photo;
 
     public Player(String name, String lieu, String imagePlayer, String speed, String defending, String stamina,
                   String passing, String dribbling, String shooting, String score){

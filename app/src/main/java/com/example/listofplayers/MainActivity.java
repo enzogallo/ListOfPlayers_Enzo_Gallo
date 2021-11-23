@@ -61,14 +61,14 @@ public class MainActivity extends AppCompatActivity {
                         String name = jsonObject.getString("name");
                         String score = Double.toString(Math.round(jsonObject.getDouble("score")*10.0)/10.0); //permet d'arrondir au dixième les scores
                         String lieu = jsonObject.getString("city");
-                        String speed_score = "Speed : " + Double.toString(Math.round(jsonObject.getDouble("speed_score")*10.0)/10.0);
-                        String stamina_score = "Stamina : " + Double.toString(Math.round(jsonObject.getDouble("stamina_score")*10.0)/10.0);
-                        String dribbling_score = "Dribbling : " + Double.toString(Math.round(jsonObject.getDouble("dribbling_score")*10.0)/10.0);
-                        String defending_score = "Defense : " + Double.toString(Math.round(jsonObject.getDouble("defending_score")*10.0)/10.0);
-                        String passing_score = "Passing : " + Double.toString(Math.round(jsonObject.getDouble("passing_score")*10.0)/10.0);
-                        String shooting_score = "Shooting : " + Double.toString(Math.round(jsonObject.getDouble("shooting_score")*10.0)/10.0);
+                        String speed_score = "Speed : " + Math.round(jsonObject.getDouble("speed_score")*10.0)/10.0;
+                        String stamina_score = "Stamina : " + Math.round(jsonObject.getDouble("stamina_score")*10.0)/10.0;
+                        String dribbling_score = "Dribbling : " + Math.round(jsonObject.getDouble("dribbling_score")*10.0)/10.0;
+                        String defending_score = "Defense : " + Math.round(jsonObject.getDouble("defending_score")*10.0)/10.0;
+                        String passing_score = "Passing : " + Math.round(jsonObject.getDouble("passing_score")*10.0)/10.0;
+                        String shooting_score = "Shooting : " + Math.round(jsonObject.getDouble("shooting_score")*10.0)/10.0;
                         String imagePlayer;
-                        if(jsonObject.getString("profile_pic") != "null"){
+                        if(!jsonObject.getString("profile_pic").equals("null")){
                             imagePlayer = jsonObject.getString("profile_pic");
                         }
                         else{
