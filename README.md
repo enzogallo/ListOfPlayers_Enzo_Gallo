@@ -21,6 +21,6 @@ avec un nombre important de données. J'ai donc recréé un nouveau fichier json
 https://api.npoint.io/555573a717aaea5cec66
 
 En espérant que vous apprécierez mon travail,
-Bien à vous
+Bien à vous,
 Enzo GALLO
 
