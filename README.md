@@ -24,3 +24,4 @@ En espérant que vous apprécierez mon travail,
 Bien à vous,
 Enzo GALLO
 
+PS : les deux comptes github cités en collaborateurs m'appartiennent
