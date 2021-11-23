@@ -29,7 +29,7 @@
 
             <TextView
                 android:id="@+id/name_tv"
-                android:layout_width="180dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="8dp"
@@ -45,7 +45,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="10dp"
                 android:text="Score"
                 android:textColor="@color/design_default_color_primary_variant"
                 android:textSize="20sp"
@@ -58,7 +58,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="10dp"
                 android:text="Lieu"
                 android:textColor="@color/teal_700"
                 android:textSize="18sp"
@@ -66,24 +66,25 @@
                 app:layout_constraintStart_toEndOf="@+id/imageview"
                 app:layout_constraintTop_toBottomOf="@+id/name_tv" />
 
+
             <TextView
                 android:id="@+id/speed_score_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
                 android:text="speed_score"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageview"
-                app:layout_constraintTop_toBottomOf="@+id/score_tv" />
+                app:layout_constraintTop_toBottomOf="@+id/lieu_tv" />
 
             <TextView
                 android:id="@+id/stamina_score_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
+                android:layout_marginStart="8dp"
                 android:layout_marginTop="20dp"
                 android:text="stamina_score"
                 android:textColor="@color/cardview_dark_background"
@@ -91,7 +92,6 @@
                 android:textStyle="bold"
                 app:layout_constraintStart_toEndOf="@+id/imageview"
                 app:layout_constraintTop_toBottomOf="@+id/speed_score_tv" />
-
 
             <TextView
                 android:id="@+id/dribbling_score_tv"
@@ -111,13 +111,14 @@
                 android:id="@+id/defending_score_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="28dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:text="defending_score"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.464"
                 app:layout_constraintStart_toEndOf="@+id/speed_score_tv"
                 app:layout_constraintTop_toBottomOf="@+id/lieu_tv" />
 
@@ -125,13 +126,14 @@
                 android:id="@+id/passing_score_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
+                android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
                 android:text="passing_score"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.058"
                 app:layout_constraintStart_toEndOf="@+id/stamina_score_tv"
                 app:layout_constraintTop_toBottomOf="@+id/defending_score_tv" />
 
@@ -139,14 +141,14 @@
                 android:id="@+id/shooting_score_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="10dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
                 android:text="shooting_score"
                 android:textColor="@color/cardview_dark_background"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toEndOf="@+id/dribbling_score_tv"
                 app:layout_constraintTop_toBottomOf="@+id/passing_score_tv" />
 

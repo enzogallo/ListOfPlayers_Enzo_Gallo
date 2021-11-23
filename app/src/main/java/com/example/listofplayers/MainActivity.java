@@ -57,14 +57,14 @@ public class MainActivity extends AppCompatActivity {
                     try {
                         JSONObject jsonObject = response.getJSONObject(i);
                         String name = jsonObject.getString("name");
-                        String score = Double.toString(Math.round(jsonObject.getDouble("score")*100.0)/100.0);
+                        String score = Double.toString(Math.round(jsonObject.getDouble("score")*10.0)/10.0);
                         String lieu = jsonObject.getString("city");
-                        String speed_score = "Speed : " + Double.toString(Math.round(jsonObject.getDouble("speed_score")*100.0)/100.0);
-                        String stamina_score = "Stamina : " + Double.toString(Math.round(jsonObject.getDouble("stamina_score")*100.0)/100.0);
-                        String dribbling_score = "Dribbling : " + Double.toString(Math.round(jsonObject.getDouble("dribbling_score")*100.0)/100.0);
-                        String defending_score = "Defense : " + Double.toString(Math.round(jsonObject.getDouble("defending_score")*100.0)/100.0);
-                        String passing_score = "Passing : " + Double.toString(Math.round(jsonObject.getDouble("passing_score")*100.0)/100.0);
-                        String shooting_score = "Shooting : " + Double.toString(Math.round(jsonObject.getDouble("shooting_score")*100.0)/100.0);
+                        String speed_score = "Speed : " + Double.toString(Math.round(jsonObject.getDouble("speed_score")*10.0)/10.0);
+                        String stamina_score = "Stamina : " + Double.toString(Math.round(jsonObject.getDouble("stamina_score")*10.0)/10.0);
+                        String dribbling_score = "Dribbling : " + Double.toString(Math.round(jsonObject.getDouble("dribbling_score")*10.0)/10.0);
+                        String defending_score = "Defense : " + Double.toString(Math.round(jsonObject.getDouble("defending_score")*10.0)/10.0);
+                        String passing_score = "Passing : " + Double.toString(Math.round(jsonObject.getDouble("passing_score")*10.0)/10.0);
+                        String shooting_score = "Shooting : " + Double.toString(Math.round(jsonObject.getDouble("shooting_score")*10.0)/10.0);
                         String imagePlayer;
                         if(jsonObject.getString("profile_pic") != "null"){
                             imagePlayer = jsonObject.getString("profile_pic");
