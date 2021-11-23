@@ -20,7 +20,7 @@
 
     <TextView
         android:id="@+id/mName"
-        android:layout_width="100dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginStart="16dp"
@@ -35,11 +35,11 @@
         android:id="@+id/mLieu"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="12dp"
         android:layout_marginStart="16dp"
         android:text="Lieu"
         android:textColor="@color/teal_700"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/mName"
         app:layout_constraintTop_toBottomOf="@+id/poster_image" />
@@ -63,7 +63,7 @@
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="64dp"
         android:text="speed_score"
         android:textColor="@color/cardview_dark_background"
         android:textSize="20sp"
@@ -71,6 +71,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mName" />
+
+    <TextView
+        android:id="@+id/mDefending_score"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:text="defending_score"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/mSpeed_score"
         app:layout_constraintTop_toBottomOf="@+id/mName" />
 
     <TextView
@@ -102,19 +115,6 @@
         app:layout_constraintHorizontal_bias="0.035"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mStamina_score" />
-
-    <TextView
-        android:id="@+id/mDefending_score"
-        android:layout_width="180dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginStart="20dp"
-        android:text="defending_score"
-        android:textColor="@color/cardview_dark_background"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/mSpeed_score"
-        app:layout_constraintTop_toBottomOf="@+id/mName" />
 
 
     <TextView
