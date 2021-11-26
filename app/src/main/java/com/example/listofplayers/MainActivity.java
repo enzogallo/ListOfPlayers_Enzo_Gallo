@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void fetchPlayers(){
-        String url = "https://api.npoint.io/555573a717aaea5cec66";
-        //Ici je me suis permis de prendre uniquement la première page de la base de données que j'ai générée sur un générateur json
+        String url = "https://api.npoint.io/7f09322753e3ceff87eb";
+        //Ici je me suis permis de concentrer toute la base de données sur une même page que j'ai générée sur un générateur json
 
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null, new Response.Listener<JSONArray>() {
             @Override
