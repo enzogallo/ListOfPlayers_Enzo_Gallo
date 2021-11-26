@@ -32,7 +32,7 @@ public class DetailActivity extends AppCompatActivity {
 
 
         Bundle bundle = getIntent().getExtras();
-        //recuperation des données du bundle crée dans l'adapter
+        //recuperation des données du bundle créé dans l'adapter
         String mName = bundle.getString("name");
         String mScore = bundle.getString("score");
         String mLieu = bundle.getString("lieu");
