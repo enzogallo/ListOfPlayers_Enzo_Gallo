@@ -1,25 +1,23 @@
-# ListOfPlayers_Enzo_Gallo
-Test technique Enzo GALLO
+#ListOfPlayers_Enzo_Gallo
 
-Afin de visualiser mon application mobile veuillez suivre les étapes suivantes :
-- Lancer Android Studio
-- Importez le projet via l'URL suivante : https://github.com/enzogallo/ListOfPlayers_Enzo_Gallo.git 
-- Vous trouverez les méthodes que j'ai implémenté dans app -> java -> com.example.listofplayers
-  et également les fichiers xml d'activité dans app -> res -> layout 
-- Vous pouvez ensuite lancer l'application en cliquant sur "Run" (après avoir préalablement selectionné un émulateur)
+Technical Test by Enzo GALLO for Footbar realised in 2021
 
-Lors de l'implémentation de cette application, j'ai utilisé le langage JAVA. On aurait également pu utiliser Kotlin
-qui est un langage de programmation apparu dans les années 2010 et qui est considéré par certains développeurs comme
-plus efficace et plus actuel.
+To view my mobile application, please follow the steps below:
 
-Dans cette application, je me suis permis d'ajouter une seconde vue très simple lorsqu'on clique sur le profil d'un
-utilisateur car à mon sens cela était intéressant.
+Launch Android Studio.
+Import the project using the following URL: https://github.com/enzogallo/ListOfPlayers_Enzo_Gallo.git.
+You will find the methods I implemented in app -> java -> com.example.listofplayers and the activity XML files in app -> res -> layout.
+You can then run the application by clicking on "Run" (after selecting an emulator beforehand).
+When developing this application, I used the Java programming language. Kotlin could also have been used, as it is a programming language that emerged in the 2010s and is considered by some developers to be more efficient and modern.
 
-Comme je l'ai stipulé en commentaires dans le code, j'ai regroupé toute la base de données sur un seul fichier json car je n'arrivais pas à gérer autrement le fait que le fichier soit découpé en plusieurs pages. J'espère que vous ne m'en tiendrez pas rigueur. J'ai donc recréé un nouveau fichier json via un générateur à l'adresse suivante :
-https://api.npoint.io/7f09322753e3ceff87eb
+In this application, I added a very simple second view when clicking on a user's profile because I found it interesting to include this feature.
 
-En espérant que vous apprécierez mon travail,
-Bien à vous,
+As noted in the code comments, I consolidated the entire database into a single JSON file because I struggled to handle a paginated structure. I hope this won't be held against me. I recreated a new JSON file using a generator at the following address:
+https://api.npoint.io/7f09322753e3ceff87eb.
+
+I hope you will appreciate my work.
+
+Best regards,
 Enzo GALLO
 
-PS : les deux comptes github cités en collaborateurs (enzogallo & gallomovic) m'appartiennent
+P.S.: The two GitHub accounts listed as collaborators (enzogallo & gallomovic) belong to me.
